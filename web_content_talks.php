@@ -90,7 +90,7 @@ foreach( $xlsx->rows() as $line => $row) {
 		}
 		else {
 			$speakerList = sprintf(
-				'<a href="%s">%s</a>, %s',
+				'%s, <a href="%s">%s</a>',
 				$speakerList,
 				getSpeakerURL($speaker3),
 				$speaker3
