@@ -1,0 +1,536 @@
+<html><head><meta charset="utf-8"></head><body>
+
+<h2 id="inconsistencies-fixed-in-writer">Inconsistencies Fixed in Writer [Development]</h2>
+<p><i><a href="/2014/speaker#miklos-vajna">Miklos Vajna</a></i></p>
+<p>LibreOffice Writer has a huge amount of features, and sometimes one feature is inconsistent with an other one, or the way a similar feature is implemented in an other application, e.g. in Calc or Impress.  The talk will mention how table selection got improved, how the UI now allows you to reject a spelling error, how Writer can now create .dot files and similar improvements. Come and see where we are, what still needs to be done, and how you can help.</p>
+<p><small>Wednesday from: 13:30 ~ to: 14:00</small></p>
+
+
+<h2 id="life-after-calc-core-change">Life after Calc Core Change [Development]</h2>
+<p><i><a href="/2014/speaker#kohei-yoshida">Kohei Yoshida</a> (Software engineer at Collabora)</i></p>
+<p>4.2 releases were perhaps most memorable in my whole LibreOffice history. I will discuss how that experience went; what I expected, and
+how it went for real, and how that will lead to the upcoming release of 4.3 series.</p>
+<p><small>Wednesday from: 14:30 ~ to: 15:00</small></p>
+
+
+<h2 id="squashing-the-beast-into-60-mb-cage">Squashing the Beast into 60 MB Cage [Development]</h2>
+<p><i><a href="/2014/speaker#tor-lillqvist">Tor Lillqvist</a> (Software engineer at Collabora)</i></p>
+<p>If you read the instructions for submitting apps to the iOS App Store very carefully, you will find it mentioned that the executable in an app must be less than 60 MB in size. (The size limit of other files included in the app is so high, if there even is one, that it is not likely to be a problem. But note that all executable code must be in
+the single executable. No dynamic libraries are allowed.)
+
+This restriction is very easy to miss. It poses a problem for meaningful apps that use LibreOffice code to load, display, and perhaps modify and save documents. Not because such an app would necessarily actually invoke anything close to even 50 MB of code from LibreOffice, but because of the large amounts of code and data that gets linked in anyway.
+
+This talk describes some of the more or less extreme measures introduced when that restriction was noticed, in order to get below the limit.</p>
+<p><small>Wednesday from: 16:00 ~ to: 16:30</small></p>
+
+
+<h2 id="unittest-and-ci-roundtable">Unittest and CI Roundtable [Development]</h2>
+<p><i><a href="/2014/speaker#bjoern-michaelsen">Bjoern Michaelsen</a>, <a href="/2014/speaker#markus-mohrhard">Markus Mohrhard</a></i></p>
+<p>Roundtable on unittests, continous integration and test-driven development. What tools do we have right now (testsuites, tinderboxes, code analysis, gerrit, etc.), which tools do we need? How do we foster a culture of tests on this legacy codebase? This session invites all contributors to brainstorm on these questions.</p>
+<p><small>Wednesday from: 16:30 ~ to: 17:30</small></p>
+
+
+<h2 id="3d-models-in-impress">3D Models in Impress [Development]</h2>
+<p><i><a href="/2014/speaker#tamas-zolnai">Tamas Zolnai</a></i></p>
+<p>An overview of the new 3D model support in Impress. LibreOffice uses more and more OpenGL solution behind the user interface, but now it appears for the users in a direct way. With the new 3D model support we can display any 3D scene in our slideshow. In this talk I will demonstrate how these models look like on the slides and on what ways can we play with them during our presentation.</p>
+<p><small>Wednesday from: 17:30 ~ to: 18:00</small></p>
+
+
+<h2 id="libreoffice-building-tips-and-tricks">LibreOffice Building Tips and Tricks [Development]</h2>
+<p><i><a href="/2014/speaker#lubos-lunak">Lubos Lunak</a></i></p>
+<p>LibreOffice is a large codebase and building it takes a lot of build time and disk space. This talk will present some tools and ways that can help reduce them (ccache, icecream, split debug info and others).</p>
+<p><small>Thursday from: 09:00 ~ to: 09:30</small></p>
+
+
+<h2 id="getting-into-the-code-for-beginners">Getting into the Code for Beginners [Development]</h2>
+<p><i><a href="/2014/speaker#michael-meeks">Michael Meeks</a></i></p>
+<p>How to become a key LibreOffice contributor. We will look at some easy hacks: some examples of getting started in the LibreOffice project. We have a ton of entry level tasks, all of them useful that we‘d love to get people involved with. We also have some more juicy, but still really useful things we need to get done too. Come and find some place to start hacking on the project that suits you and your skills, and help us drive the project forward.</p>
+<p><small>Thursday from: 09:30 ~ to: 10:00</small></p>
+
+
+<h2 id="drawinglayer--what-should-you-know-about-it">drawinglayer : What Should You Know about It [Development]</h2>
+<p><i><a href="/2014/speaker#jan-holesovsky">Jan Holesovsky</a></i></p>
+<p>I am not the author of drawinglayer - and it appals me how on one hand the drawinglayer became a core technology of LibreOffice, and on the other, how little information about it is available, understandable, and shared inside our community.
+
+This talk will summarize my experience with drawinglayer, and will attempt to break down the drawinglayer complexities into smaller pieces that can be useful for every LibreOffice developer.</p>
+<p><small>Thursday from: 10:00 ~ to: 10:30</small></p>
+
+
+<h2 id="techniques-used-for-testing-of-html-svg-wmfemf-formats">Techniques Used for Testing of HTML, SVG, WMF/EMF Formats [Development]</h2>
+<p><i><a href="/2014/speaker#tomaz-vajngerl">Tomaz Vajngerl</a></i></p>
+<p>In LibreOffice we extensively test ODF and OOXML formats (import, export and round-trip). Other formats, especially common vector graphic formats, aren't tested as much as they could be. We need to improve that.</p>
+<p><small>Thursday from: 10:30 ~ to: 11:00</small></p>
+
+
+<h2 id="a-threading-starl">A Threading Starl [Development]</h2>
+<p><i><a href="/2014/speaker#michael-stahl">Michael Stahl</a></i></p>
+<p>As anybody who uses remote UNO connections is aware, the legacy code-base of LibreOffice is riddled with subtle concurrency bugs. This talk is an airing of grievances and investigation into the nature of the problem, with the aim of providing an estimate as to how doomed we are, exactly.</p>
+<p><small>Thursday from: 11:00 ~ to: 11:30</small></p>
+
+
+<h2 id="writing-import-filters-for-libreoffice">Writing Import Filters for LibreOffice [Development]</h2>
+<p><i><a href="/2014/speaker#fridrich-strba">Fridrich Strba</a>, <a href="/2014/speaker#david-tardon">David Tardon</a></i></p>
+<p>LibreOffice is known as a Swiss Army knife of file formats. This is mainly du to the impressive number of import filters integrated since the project was born. This hands-on will give a quick overview about different frameworks that can be used by import filters within LibreOffice. It will also guide the audience through an implementation of a dummy file-format importer using the librevenge framework. The result of this workshop will be a skeleton library that can be used to write an import filter for your preferred file-format.</p>
+<p><small>Thursday from: 11:30 ~ to: 12:00</small></p>
+
+
+<h2 id="ooxml-docx-interoperability-status">OOXML DOCX Interoperability Status [Development]</h2>
+<p><i><a href="/2014/speaker#adam-fyne">Adam Fyne</a></i></p>
+<p>When working together on documents, users tend to choose to work with the same tool that their colleagues use so as to be compatible and avoid format conversion. This helps traditional leading office tools like Microsoft Office to create stickiness and attract all the users to their dominating file format. To disrupt this cycle it is not enough to allow importing of formats like OOXML into LibreOffice. Only by making LibreOffice truly compatible with Microsoft Office OOXML format, will we allow users to work with LibreOffice without having to be concerned about the office tools chose by their colleagues.
+
+In the past year, CloudOn has invested tremendous resources to improve the way LibreOffice imports and export DOCX documents. In this talk we are going to discuss the work that CloudOn, alongside Collabora, Igalia & Synerzip have put into LibreOffice Writer in the past year to support OOXML better, different mechanisms which have been introduced into Writer to allow for better preservation of objects & methods to test thousands of files. In addition, a comparison which has been done between LibreOffice and GoogleDocs will be presented.
+
+Topics of Discussion
+* What is DOCX? What is Interoperability?
+* 4 Layers of interoperability (Corrupt, Preserve, Render, Manipulate)
+* DOCX Preservation
+** What is supported?
+** InteropGrabBag
+* Interoperability Matrix - LibreOffice vs Google-Docs
+* Statistics & Examples for Fixed Cases (September 2013 vs September 2014)
+** Corrupt
+** Crash
+** Preservation - Data Loss
+** Preservation - Style Loss
+* Observations from CloudOn's iOS App BETA</p>
+<p><small>Thursday from: 13:00 ~ to: 14:00</small></p>
+
+
+<h2 id="thoughts-on-future-core-design-bof">Thoughts on Future Core Design BOF [Development]</h2>
+<p><i><a href="/2014/speaker#michael-meeks">Michael Meeks</a></i></p>
+<p>A BOF on design / direction / re-factoring issues facing the code-base as we move forward; will present the status of various re-factoring efforts, and highlight several more important areas of work. From code re-use, to OpenGL rendering, from VCL fixing, to improved lifecycle.</p>
+<p><small>Thursday from: 14:00 ~ to: 15:00</small></p>
+
+
+<h2 id="libreoffice-on-android">LibreOffice on Android [Development]</h2>
+<p><i><a href="/2014/speaker#toma-vajngerl">Tomaž Vajngerl</a>, <a href="/2014/speaker#tor-lillqvist">Tor Lillqvist</a></i></p>
+<p>Handling a mobile application is quite different from a user's perspective than a desktop application. LibreOffice being a desktop application did not have the infrastructure not the user experience that is expected from a mobile application. This talk presents the making of LibreOffice on Android which is an attempt of a LibreOffice mobile application.
+
+In the first part of the talk we will present the lower-level work: adapting LibreOffice to Android platform and interfacing with an Android Java application. The second part is about the higher-level work: creating "LibreOffice on Android" application based on Mozilla Fennec code.</p>
+<p><small>Thursday from: 15:00 ~ to: 15:30</small></p>
+
+
+<h2 id="opengl-in-libreoffice">OpenGL in LibreOffice [Development]</h2>
+<p><i><a href="/2014/speaker#markus-mohrhard">Markus Mohrhard</a></i></p>
+<p>In this talk we will discuss how to use OpenGL in Libreoffice. Historically OpenGL was a build requirement that made it difficult to distribute features based on OpenGL. With some of the new development and support for OpenGL in vcl it is easier than ever.
+
+The talk will detail how to use OpenGL and how to use the modern OpenGL support based on shaders and OpenGL 2.0+.</p>
+<p><small>Thursday from: 16:00 ~ to: 16:30</small></p>
+
+
+<h2 id="mail-merge-internals">Mail Merge Internals [Development]</h2>
+<p><i><a href="/2014/speaker#eilidh-mcadam">Eilidh McAdam</a></i></p>
+<p>Mail merge is most often required by organisations such as government bodies and businesses. As a consequence, it hasn't had a lot of attention compared to issues faced by individual users. I'd like to talk about how it works in LibreOffice, the problems faced by users and recent improvements made to the feature.</p>
+<p><small>Thursday from: 17:30 ~ to: 18:00</small></p>
+
+
+<h2 id="its-magic-its-mobile">It's Magic. It's Mobile. [Development]</h2>
+<p><i><a href="/2014/speaker#shachar-binyamin">Shachar Binyamin</a></i></p>
+<p>For CloudOn, this is the story of the ultimate document creation experience for mobile. You know that annoying problem of not being able to use your fingers to manipulate and create rich content in documents? You know that frustration you feel when you have extremely limited space to read and review documents on tablets and phones? You know the problem of accessing, editing and sharing documents on mobile? Well, we feel the pain from these problems as do our users. We took on the challenge of solving these problems and we believe we have created a tool that is magic, fast and fun.
+
+Shachar will talk about how CloudOn defined, designed and developed a successful application that users care about on the Libre Office core.
+
+Topics that Shachar will cover:
+* Difficulty of building the toolbar
+* Creating beautiful styles
+* Using gestures for easier input and productivity
+* Determining how to build a minimal rich experience that meets our user needs
+* Transitioning from Microsoft Office as the basis of the CloudOn app to the Libre Office core</p>
+<p><small>Friday from: 09:00 ~ to: 10:00</small></p>
+
+
+<h2 id="libreoffice-architecture-for-ios-document-editor">LibreOffice Architecture for iOS Document Editor [Development]</h2>
+<p><i><a href="/2014/speaker#ptyl-dragon">Ptyl Dragon</a></i></p>
+<p>The talk would discuss CloudOn's effort over the last year, to use libreoffice, so to power a full touch office experience for mobile devices. Talk would focus on writer and iOS, with respect to the following:
+
+* In document navigation - tiled rendering - adaptation of the desktop canvas and behavior, so to be compatible with native touch technologies (e.g CATiledLayer), allowing easy leveraging of the device's GPU, resulting with a seamless integration of LibreOffice into native look and feel
+* Rendering performance - integration of Apple's native rendering libraries, core graphics and core text, into VCL's rendering mechanism, while minimizing rendered areas to "dirty" rects only
+* Document selection - tunneling the rects of the selection overlay, so to be rendered using device's native frameworks (again, leveraging the GPU, while still using relatively high level API), providing the fast response and slickness users expect from touch applications.
+* Editing functionality - adapting the APIs provided by LibreOffice desktop (e.g. UNO, and the SW module), so to be usable with the touch adapted document selection mechanism.
+* Threading - Decoupling the iOS views from the LibreOffice DOM, while combining native iOS dispatch queues, LibreOffice's event loop and mutexes, so to ensure consistency between rendering and editing functionality, without sacrificing the smoothness of touch experience (e.g. auto saving)
+* Conforming to apple's 60 MB binary size restriction (mandatory for app store approval), by externalizing data out of the code, and into loaded data resources, removing LibreOffice libraries unnecessary for the iOS app, trimming linkage of factories and factory branches, compilation flags, reducing the usage of templates (e.g STL and boost containers), etc
+* Touch device memory restrictions - integrating a node count limit, and free memory limit to the XStatusIndicator mechanism, allowing to abort opening documents, preventing memory outages and crashes
+* Daily build combined with high level iOS unit testing - ensuring product stability, ability to safely add new features, and robustness while still merging with code from the master branch, rather than official stable LibreOffice releases, allowing an agile development process</p>
+<p><small>Friday from: 10:00 ~ to: 11:00</small></p>
+
+
+<h2 id="easy-hacks-to-improve-ooxml-writer-interoperability">Easy Hacks to Improve OOXML Writer Interoperability [Development]</h2>
+<p><i><a href="/2014/speaker#sushil-shinde">Sushil Shinde</a> (Sr. Software Engineer, Synerzip Softech Pvt Ltd)</i></p>
+<p>OOXML is a widely used file format. Many people, organizations, schools etc. use OOXML file formats. Currently Libreoffice supports OOXML file formats. But there are many open bugs for writer OOXML interoperability. Many features are either not supported or not handled properly. We can fix them by studying XML values from docx files. Currently many files gets crashed while opening on LO and if LO opens them properly then it corrupts some files while saving. I will cover some best practices to improve interoperability. I will also showcase improvements in features which are widely used.
+
+Topics will be covered in presentation.
+
+1. Interoperability improvements in widely used features.
+2. XML comparisons to find root cause and fix issues.
+3. Simple code hacks.
+4. Crash and corruptions due to libreoffice code.
+5. Patterns of crash and corruption.
+6. Some best available tools for finding root cause.</p>
+<p><small>Friday from: 11:00 ~ to: 12:00</small></p>
+
+
+<h2 id="overview-and-status-of-libreoffice-accessibility">Overview and Status of LibreOffice Accessibility [Development]</h2>
+<p><i><a href="/2014/speaker#jacobo-aragunde">Jacobo Aragunde</a> (Software Engineer, Igalia)</i></p>
+<p>The purpose of this presentation is to provide participants with a basic understanding of LibreOffice accessibility. It will begin with a brief introduction to accessibility support, including the challenges assistive technologies are meant to address and how they are able to do so through the implementation of accessibility APIs.
+
+With this background having been established, the remainder of the session will be spent examining the specific case of LibreOffice: which accessibility backends are implemented and how the architecture is designed to support multiple backends while maximizing code reuse, making the addition of new backends easier.
+
+The presentation will conclude with a discussion of the current health of LibreOffice accessibility supported by an analysis of bug trends and repository statistics.</p>
+<p><small>Friday from: 13:00 ~ to: 13:30</small></p>
+
+
+<h2 id="how-to-create-a-custom-widget">How to Create a Custom Widget [Development]</h2>
+<p><i><a href="/2014/speaker#jan-holesovsky">Jan Holesovsky</a></i></p>
+<p>Our widget framework, VCL, provides LibreOffice with many widgets you can use in the dialogs, and other user interface elements, like buttons, list boxes, etc. But sometimes you need to create a custom widget – one that behaves & appears in a special way.
+
+This talk will describe the essentials of creating custom widgets, what methods to implement, and how to plug it into the dialogs and other user interface elements.</p>
+<p><small>Friday from: 13:30 ~ to: 14:00</small></p>
+
+
+<h2 id="coverity-and-libreoffice-current-status">Coverity and LibreOffice, Current Status [Development]</h2>
+<p><i><a href="/2014/speaker#caoln-mcnamara">Caolán McNamara</a></i></p>
+<p>We run the development version of LibreOffice through the static analysis coverity tooling on a regular basis. This lightning talk presents the current status, overall trends and common pitfalls on taking coverity warnings at face value.</p>
+<p><small>Friday from: 14:00 ~ to: 14:30</small></p>
+
+
+<h2 id="automated-testing-for-libreoffice">Automated Testing for LibreOffice [Development]</h2>
+<p><i><a href="/2014/speaker#markus-mohrhard">Markus Mohrhard</a>, <a href="/2014/speaker#bjoern-michaelsen">Bjoern Michaelsen</a></i></p>
+<p>Testing is a central part of the development process. In this talk we will discuss the various techniques used in the Libreoffice code base and how to use them. All the concepts will be discussed with examples from the Libreoffice code base. Additionally we will discuss the benefits of a test driven development environment.</p>
+<p><small>Friday from: 14:30 ~ to: 15:00</small></p>
+
+
+<h2 id="the-big-draw-on-librelogoorg">The Big Draw on LibreLogo.org [Development]</h2>
+<p><i><a href="/2014/speaker#lszl-nmeth">László Németh</a></i></p>
+<p>LibreLogo.org is dedicated to the easy, Logo-like programming environment of LibreOffice for turtle vector graphics. The talk provides a brief glimpse into the motivations, results and future plans of developments of LibreLogo and LibreLogo.org, and it shows the best illustrations of the upcoming LibreLogo picture book.
+
+Link: http://www.librelogo.org</p>
+<p><small>Friday from: 16:00 ~ to: 16:30</small></p>
+
+
+<h2 id="compiler-and-me-how-to-team-up-with-modern-compiler-technology-to-keep-the-libreoffice-code-base-under-control">Compiler and Me: How to team up with modern compiler technology to keep the LibreOffice code base under control [Development]</h2>
+<p><i><a href="/2014/speaker#stephan-bergman">Stephan Bergman</a></i></p>
+<p>Modern C++ compilers like Clang and GCC are more and more becoming tool sets that can be individualized and adapted to the needs of a specific code base. Plugins find bugs in the usage of certain LibreOffice code idioms already during compilation, and help us guarantee some invariants about the code that in turn allow us to modify it with confidence. Runtime support to precisely detect various causes of undefined behavior is becoming ever cheaper and easier to use. Mix in evolving C+11
+support, and we are on a good way to stay ahead of our ever-growing code base.
+
+This talk will give an overview of what is available in our tool box, and demonstrate how to leverage it effectively.</p>
+<p><small>Friday from: 16:30 ~ to: 17:00</small></p>
+
+
+<h2 id="3d-charts-and-new-development-in-charts">3D Charts and New Development in Charts [Development]</h2>
+<p><i><a href="/2014/speaker#markus-mohrhard">Markus Mohrhard</a></i></p>
+<p>This talk discusses the development in the chart module in the last year with a special focus on 3D charts. Some of the new features like property mapping, time based charting and 3D scene support will be discussed.</p>
+<p><small>Friday from: 17:00 ~ to: 17:30</small></p>
+
+
+<h2 id="accelerated-threaded-xml-parsing">Accelerated, Threaded XML Parsing [Development]</h2>
+<p><i><a href="/2014/speaker#matus-kukan">Matus Kukan</a>, <a href="/2014/speaker#michael-meeks">Michael Meeks</a></i></p>
+<p>Come hear how Matus Kukan and I significantly accelerated XML parsing using the XFastParser interface in LibreOffice; see the befores and the afters, hear about some of the other sillies in OOXML parsing, and hear about what is necessary in the ODF filters to make use of this.</p>
+<p><small>Friday from: 17:30 ~ to: 18:00</small></p>
+
+
+<!-- ********** NEXT TOPIC ********** -->
+
+<h2 id="qa-roundtable">QA Roundtable [QA]</h2>
+<p><i><a href="/2014/speaker#bjoern-michaelsen">Bjoern Michaelsen</a></i></p>
+<p>What we achieved, what we need to impove. Brainstorming and coordinating the next two releases: LibreOffice 4.4 and 4.5.</p>
+<p><small>Wednesday from: 13:00 ~ to: 14:00</small></p>
+
+
+<h2 id="tools-for-qa">Tools for QA [QA]</h2>
+<p><i><a href="/2014/speaker#florian-reisinger">Florian Reisinger</a></i></p>
+<p>This talk is about the tools for QA, SI-GUI for Windows, Bibi-GUI (at the moment in only) and some features for bugzilla and more.  [If Rob agrees he might tell something about the future of BSA, maybe our new bugzilla --> "more" ;) ]</p>
+<p><small>Wednesday from: 15:00 ~ to: 15:30</small></p>
+
+
+<h2 id="qa-mission-plan--where-we-are-headed-in-2015">QA Mission Plan : Where we are Headed in 2015 [QA]</h2>
+<p><i><a href="/2014/speaker#robinson-tryon">Robinson Tryon</a> (QA Engineer, The Document Foundation), <a href="/2014/speaker#joel-madero">Joel Madero</a></i></p>
+<p>Notorious legends of LibreOffice QA, Joel Madero and Robinson Tryon, will co-present this roundup of QA Team activities in 2014 and preview of future directions for the Team in 2015.
+
+By the start of the LibreOffice Conference, we hope to have our own instance of Bugzilla running on TDF hardware, active Bibisect repositories for all of our major platforms, and an improved approach to testing daily builds. If we haven't completed the entire list by September, we'll give a brief rundown of what's left and what hurdles we've faced along the way!
+
+During this talk we'll cover a raft of new ideas and proposals that we've tried or will be trying over the course of the coming year, including:
+* Improvements to Bugzilla
+* New QA tools, including a Bibisect GUI
+* Suggestions for team recruitment
+* Cross-project "Bug-bees"
+* Involvement of QA in the newly-formed Document Liberation Project
+* A recap of QA Team activity at the US Summer Hackfest</p>
+<p><small>Wednesday from: 16:00 ~ to: 16:30</small></p>
+
+
+<h2 id="tb3-tinderboxing-and-testing">tb3, Tinderboxing and Testing [QA]</h2>
+<p><i><a href="/2014/speaker#bjoern-michaelsen">Bjoern Michaelsen</a></i></p>
+<p>There is ongoing work in making our tinderboxes less archaic and more useful. This talk gives an overview of progress to far and a prospect on what is to come using our tinderboxes, gerrit and unittests. This is a follow up to: http://conference.libreoffice.org/2013/en/program/devops/tb3-using-tinderboxes-efficiently</p>
+<p><small>Thursday from: 10:30 ~ to: 11:00</small></p>
+
+
+<h2 id="measuring-libreoffice-interoperability">Measuring LibreOffice Interoperability [QA]</h2>
+<p><i><a href="/2014/speaker#dushyant-bhalgami">Dushyant Bhalgami</a> (QA Architect, Synerzip Softech Pvt Ltd)</i></p>
+<p>Over past year many of the users, companies & government organizations have shifted towards the LibreOffice as LibreOffice has allowed the support for file formats like OOXML. But only this support is enough? No, we have to make LibreOffice truly compatible with Microsoft Office OOXML format. In past 8 months, Synerzip has invested tremendous resources to measure the improvements of LibreOffice interoperability, the way LibreOffice imports and exports DOCX documents.
+In this talk we are going to discuss the work that Synerzip has put to measure the improvements of LibreOffice interoperability. In addition, demo of existing automated scripts will be presented as well as next level of automated scripts to measure the LibreOffice interoperability one step further will be discussed. Topics of Discussion:
+* Visual Comparison
+* Results of Visual Comparison
+* Visual Comparison Challenges
+* Non-Visual Comparison
+** XML Level Comparison (FCT - Feature Comparison Tool)
+** Calc Comparison Engine
+** Impress Comparison Engine
+* Non-Visual Comparison Challenges
+* Demo of the existing automated test framework to measure the LibreOffice interoperability</p>
+<p><small>Friday from: 13:00 ~ to: 14:00</small></p>
+
+
+<!-- ********** NEXT TOPIC ********** -->
+
+<h2 id="odt-and-word-in-practice">ODT and Word in Practice [ODF & Document Liberation]</h2>
+<p><i><a href="/2014/speaker#alexander-mayer">Alexander Mayer</a></i></p>
+<p>In an enterprise software project I've evaluated Microsoft Word as editor software for ODT files written with LibreOffice. The result of this evaluation is a validation software pointing to critical ODF elements in an ODT file. The user has the possibility to check a ODT file for compatibility with Word. Additionally, this software is doing some transformations on the ODT file. I've found out some in-depth details about the implementation of ODT export in Word. I would be glad to share the results with the audience at the conference.</p>
+<p><small>Thursday from: 09:30 ~ to: 10:00</small></p>
+
+
+<h2 id="status-of-the-upcoming-odf-13">Status of the Upcoming ODF 1.3 [ODF & Document Liberation]</h2>
+<p><i><a href="/2014/speaker#svante-schubert">Svante Schubert</a></i></p>
+<p>I would like to provide a status on the upcoming ODF 1.3 and especially the change-tracking specifiation.</p>
+<p><small>Thursday from: 15:00 ~ to: 15:30</small></p>
+
+
+<h2 id="document-liberation-project--trying-to-break-the-vendor-lock">Document Liberation Project : Trying to Break the Vendor Lock [ODF & Document Liberation]</h2>
+<p><i><a href="/2014/speaker#fridrich-strba">Fridrich Strba</a>, <a href="/2014/speaker#david-tardon">David Tardon</a></i></p>
+<p>In April 2014, the second project of the Document Foundation was born:
+Document Liberation Project. The aim of the project is to free documents and their authors from the vendor lock operated by numerous software vendors.
+This talk will present the project, its philosophical basis, its mission and tools used to achieve the goal of breaking vendor lock. It will also show the successes already achieved and present the possibilities to get involved.</p>
+<p><small>Friday from: 10:30 ~ to: 11:00</small></p>
+
+
+<!-- ********** NEXT TOPIC ********** -->
+
+<h2 id="the-infrastructure-of-the-libreoffice-project">The Infrastructure of the LibreOffice Project [Infrastructure]</h2>
+<p><i><a href="/2014/speaker#alexander-werner">Alexander Werner</a>, <a href="/2014/speaker#florian-effenberger">Florian Effenberger</a></i></p>
+<p>Most free software projects happen in a virtual environment, and build on a joint cooperation of many contributors worldwide, breaking barriers of language, culture and time zones - something that would have been unthinkable with the technology available 20 years ago. Essential to the success of any such free software project is a reliable and scalable infrastructure that grows with the community and scales based on its needs. Being one of the largest free software projects worldwide, the LibreOffice community was challenged with providing a professional infrastructure from the very first day. Following our principles, nearly all components solely rely on free and open source software. We not only build on third party components, but also develop many of our infrastructure tools on our own, and make them available to the worldwide community, while at the same time contributing to projects we make use of. This talk gives an overview on the infrastructure of the LibreOffice project and how it provides the playground the community and the software need to grow and flourish.</p>
+<p><small>Thursday from: 10:00 ~ to: 10:30</small></p>
+
+
+<h2 id="setting-up-release-baseline-build-environments">Setting up Release-Baseline Build Environments [Infrastructure]</h2>
+<p><i><a href="/2014/speaker#christian-lohmaier">Christian Lohmaier</a></i></p>
+<p>The talk will give a short introduction about what the baseline for the various operating systems are, and how to setup one with virtually no effort.
+
+The talk will be mostly done by playing back a screencast demoing the creation of a virtual machine followed by the installation of the build-environment with live commentary that can be speed-up/cut to ~any length.</p>
+<p><small>Friday from: 10:00 ~ to: 10:30</small></p>
+
+
+<h2 id="libreoffice-website-infrastructure">LibreOffice Website Infrastructure [Infrastructure]</h2>
+<p><i><a href="/2014/speaker#christian-lohmaier">Christian Lohmaier</a></i></p>
+<p>On last year's conf I held a similar talk, but tried to squeeze in too much in short time, so it was kind of chaotic in the end and I think people couldn't follow.. So this time I would focus exclusively on the template-language and php-hooks, and ignore everything about the CMS-Backend/user-interface.</p>
+<p><small>Friday from: 11:00 ~ to: 11:30</small></p>
+
+
+<h2 id="what-is-tinderbox--setting-up-a-tinderbox">What is tinderbox? / Setting up a Tinderbox [Infrastructure]</h2>
+<p><i><a href="/2014/speaker#christian-lohmaier">Christian Lohmaier</a></i></p>
+<p>While setting up a tinderbox is not a difficult task, there are some conventions that should be followed when setting one up. The talk will cover a tinderbox-admin's duties, and present the various command frameworks that are available.</p>
+<p><small>Friday from: 15:00 ~ to: 15:30</small></p>
+
+
+<!-- ********** NEXT TOPIC ********** -->
+
+<h2 id="translations-of-libreoffice-guides-in-two-languages-in-parallel">Translations of LibreOffice Guides (in Two Languages in Parallel) [l10n]</h2>
+<p><i><a href="/2014/speaker#milo-rmek">Miloš Šrámek</a>, <a href="/2014/speaker#stanislav-horek">Stanislav Horáček</a></i></p>
+<p>Documentation has traditionally been a problem in the open source / free software world. This is fortunately not the case of LibreOffice which is equipped with a comprehensive help system and, moreover, six guides each comprising hundreds of pages. The guides were, of course, written in English. While there are many English speakers around, translating the guides to other languages may help more people and eventually bring in new LibreOffice users.  We started with the translation of the Getting Started (GS) guide to Slovak more than a year ago. After translating a few chapters of the GS 3.5 guide simply by overwriting the English text with the Slovak one, the GS 4.0 guide was published. We realized that we were not able to reuse the old translations and started to think more earnestly about the translation process. Having considered several tools, we finally decided to switch to the CAT (computer aided translation) system OmegaT. It is free (GPL) software that supports the OpenDocument standard and collaborative translation based on a subversion/git repository. Later we joined forces with the Czech LibreOffice localization team, hoping that we can take advantage of the fact that Czech and Slovak are very similar languages by employing machine translation to speed up our work.  It the presentation we will give an overview of our bilingual translation workflow and will address important issues, hurdles and how we overcame them. We hope to be able to bring with us the translated Guide in the hope that we will encourage other teams to reuse our know-how (and some scripts, too).</p>
+<p><small>Thursday from: 11:30 ~ to: 12:00</small></p>
+
+
+<h2 id="overview-of-localization-infrastructure-of-libreoffice">Overview of Localization Infrastructure of LibreOffice [l10n]</h2>
+<p><i><a href="/2014/speaker#andras-timar">Andras Timar</a></i></p>
+<p>This will be a short introduction to the localization infrastructure of LibreOffice, the setup of the source tree, where the tools are, what code fiddles .po files in what way, etc. I will also talk about the edge cases, such as Android and iOS, and about the challenges that localizers have been facing.</p>
+<p><small>Thursday from: 16:00 ~ to: 16:30</small></p>
+
+
+<!-- ********** NEXT TOPIC ********** -->
+
+<h2 id="update-about-certification">Update about Certification [Migration]</h2>
+<p><i><a href="/2014/speaker#italo-vignoli">Italo Vignoli</a></i></p>
+<p>The talk is supposed to introduce the certification track, with an update about the certification project and an outlook for future developments.</p>
+<p><small>Wednesday from: 13:00 ~ to: 13:30</small></p>
+
+
+<h2 id="handling-pr-announcements">Handling PR Announcements [Migration]</h2>
+<p><i><a href="/2014/speaker#italo-vignoli">Italo Vignoli</a></i></p>
+<p>TDF PR announcements have traditionally been managed centrally, without a real coordination with native language projects. In 2014, we have started to coordinate, but the objective is to improve the process and replicate it in every geography by training a group of people in basic media relations.</p>
+<p><small>Wednesday from: 13:30 ~ to: 14:00</small></p>
+
+
+<h2 id="profile-of-migration-professionals">Profile of Migration Professionals [Migration]</h2>
+<p><i><a href="/2014/speaker#italo-vignoli">Italo Vignoli</a></i></p>
+<p>LibreOffice Certification is different from any commercial one. Because of this, it is important for candidates for migrations to understand what TDF expects from them.</p>
+<p><small>Wednesday from: 14:00 ~ to: 14:30</small></p>
+
+
+<h2 id="libreumbria-an-update-on-the-green-migration">LibreUmbria, an Update on the Green Migration [Migration]</h2>
+<p><i><a href="/2014/speaker#alfredo-parisi">Alfredo Parisi</a> (Research fellow, University of Perugia)</i></p>
+<p>LibreUmbria is a project of Umbria Region, the green hearth of Italy, who has standardized on LibreOffice for the Public Administration. The project is signed by the Umbria Region, Consortium SIR Umbria (the association of local authorities for the Regional Information System), Perugia Local Health Authority (ASL1), the two Provinces of Perugia and Terni, and the School of Public Administration “Villa Umbra”.
+
+LibreUmbria project started in October 2012. In May 2014 over 2000 users, on a total of 5000, have been involved. The community is growing and it is the point of reference for several migrations in Italy, when others municipalities and provinces chose LibreOffice.
+
+All the documents and learning materials are published into the blog (www.libreumbria.it).
+
+The project is also landed in some schools of Umbria (LibreUmbria@Scuola): educators and parents are trained about LibreOffice, Ubuntu and Open Source Software. LibreUmbria focus attention on how to simplify the phase of formation through an e-learning platform, using video, text and SCORM object. The beta platform is developed in Wordpress and Moodle; the first used for blog part (FAQ, news) and the second for the learning phase.
+
+A large number of members of LibreUmbria are TDF members, and founding members of LibreItalia.
+
+LibreItalia is the italian community of LibreOffice, founded in Perugia on April 2014.</p>
+<p><small>Wednesday from: 14:30 ~ to: 15:00</small></p>
+
+
+<h2 id="migrating-from-ms-office-to-libreoffice--the-italian-public-administrations">Migrating from MS Office to LibreOffice : The Italian Public Administrations [Migration]</h2>
+<p><i><a href="/2014/speaker#marina-latini">Marina Latini</a></i></p>
+<p>Today talk about Open Source in Public Administrations isn't a tabu and Italy is starting to have important laws. From 2005, with CAD (Digital Administration Code), the Italian Public Administrations are approaching to Open Source Software and Open Source culture. The last version of CAD makes PA to compare proprietary software with open source, evaluating economical and technical differences. A PA must prefer the open solution to the closed. Only in some (and quite evident) conditions can chose the proprietary solution.
+The migration process needs to be clear, detailed and structured, like an IT algorithm. The customer need to be followed in every step of the migration process. Some key points observed during our experiences are the fundamental role of communication, the crucial role of training and the awareness that there aren't bad users but only worried users that don't want to subvert their jobs.</p>
+<p><small>Wednesday from: 15:00 ~ to: 15:30</small></p>
+
+
+<h2 id="framing-your-competition">Framing Your Competition [Migration]</h2>
+<p><i><a href="/2014/speaker#italo-vignoli">Italo Vignoli</a></i></p>
+<p>Learn how to monitor your competitors in order to develop a winning strategy. Targeted to native language projects.</p>
+<p><small>Wednesday from: 16:00 ~ to: 16:30</small></p>
+
+
+<h2 id="libreoffice-messaging">LibreOffice Messaging [Migration]</h2>
+<p><i><a href="/2014/speaker#italo-vignoli">Italo Vignoli</a></i></p>
+<p>Learn how to develop messages to promote LibreOffice in your geography. Targeted to native language projects.</p>
+<p><small>Wednesday from: 16:30 ~ to: 17:00</small></p>
+
+
+<h2 id="brazilian-market-for-libreoffice">Brazilian Market for LibreOffice [Migration]</h2>
+<p><i><a href="/2014/speaker#olivier-hallot">Olivier Hallot</a></i></p>
+<p>This presentation is a glimpse on the situation of the Brazilian market for LibreOffice. We will discuss the facts we have experienced on the role of LibreOffice among corporationas and government. We will try to draw suggestions on where LibreOffice development should go based on the Brazilian, and possibly Latin America demand.</p>
+<p><small>Wednesday from: 17:00 ~ to: 17:30</small></p>
+
+
+<h2 id="how-collabora-serves-customers--community">How Collabora Serves Customers & Community [Migration]</h2>
+<p><i><a href="/2014/speaker#michael-meeks">Michael Meeks</a></i></p>
+<p>NEEDS UPDATE!!</p>
+<p><small>Thursday from: 11:00 ~ to: 11:30</small></p>
+
+
+<h2 id="just-starting-out-libreoffice-for-beginners">Just starting out: LibreOffice for Beginners [Migration]</h2>
+<p><i><a href="/2014/speaker#robinson-tryon">Robinson Tryon</a> (QA Engineer, The Document Foundation)</i></p>
+<p>New to using LibreOffice? New to the world of Free/Open Source Software? This beginner-oriented talk will give you a gentle introduction to LibreOffice and our favorite open file format, ODF.
+
+We'll cover some of the basics of the applications that make up the LibreOffice suite, tell you about our parent non-profit (The Document Foundation), and give you some background on how our Free Software project fits into a modern GNU/Linux system.
+
+Feel free to raise your hand and ask questions at any time!
+
+If you're thinking about bringing a non-technical friend to the
+conference, this talk is perfect for them.</p>
+<p><small>Thursday from: 11:30 ~ to: 12:00</small></p>
+
+
+<h2 id="libreoffice-migrations-of-office-suite-dependent-applications">LibreOffice Migrations of Office Suite Dependent Applications [Migration]</h2>
+<p><i><a href="/2014/speaker#lszl-nmeth">László Németh</a></i></p>
+<p>The talk presents the most interesting parts of the
+OpenDocument and LibreOffice migration guide of the Hungarian Free
+Software Competence Center.</p>
+<p><small>Thursday from: 13:00 ~ to: 13:30</small></p>
+
+
+<h2 id="libreoffice-as-the-first-step-in-foss-migration--unesp--univ-estudual-paulista">LibreOffice as the First Step in FOSS Migration : UNESP – Univ Estudual Paulista [Migration]</h2>
+<p><i><a href="/2014/speaker#valdir-barbosa">Valdir Barbosa</a>, <a href="/2014/speaker#douglas-vigliazzi">Douglas Vigliazzi</a></i></p>
+<p>The UNESP - Univ Estadual Paulista is a public institution located in São Paulo-Brazil and is distributed in 24 cities and 34 schools and institutes, is the most successful model of a multicampus university and is focused on nearly every field of experimental and theoretical sciences. This scattering, difficult the standardization of procedures, job routines, documentation, etc. Unsuccessful, isolated initiatives of two units for the ODF adoption, starting in 2003, Instituto de Artes São Paulo decided by replace of MS Office for OpenOffice/BrOffice. In 2005, Campus Litoral Paulista decided to do the same. Finally, in 2007, Faculdade de Engenharia, UNESP - Univ Estadual Paulista, campus Ilha Solteira plans complete migration of Operational System of the desktops to GNU/Linux, but the first step is replace MS Office, Internet Explorer and Outlook by BrOffice, Firefox and Thunderbird. Currently, LibreOffice is the use of ODF to storage and exchange of documents and free software migration is an institutional plan and is supported by university direction by official documentation.</p>
+<p><small>Thursday from: 13:30 ~ to: 14:00</small></p>
+
+
+<h2 id="libreitalia">LibreItalia [Migration]</h2>
+<p><i><a href="/2014/speaker#sonia-montegiove">Sonia Montegiove</a></i></p>
+<p>LibreItalia, the LibreOffice's Italian community, was born last June as a non-profit association. This has been possible thanks to the large number of people who in recent months have joined and actively collaborated in the Google Plus community (approximately 2.500) and many italian PA that has choosen LibreOffice (Umbria Region, the Province of Bolzano, Cremona, Milano and Macerata and several municipalities and healthcare companies).
+Among the objectives of LibreItalia: contributing to the growth of digital culture, particularly in the most vulnerable groups of the population; promoting initiatives for dissemination and training on LibreOffice and FLOSS; supporting the dissemination of free formats, ODF in particulary, and the publication and use of the open data by citizens.</p>
+<p><small>Thursday from: 14:00 ~ to: 14:30</small></p>
+
+
+<h2 id="an-upcoming-issue-in-feasability-evaluations-for-a-migration-to-libreoffice-security">An Upcoming Issue in Feasability Evaluations for a Migration to LibreOffice: Security [Migration]</h2>
+<p><i><a href="/2014/speaker#lothar-k-becker">Lothar K. Becker</a> (Managing Director of .riess applications)</i></p>
+<p>Since Snowden, but more since "heartbleed", the subject of security for  professional deployments in administration and economy plays a much more significant role in the  migration advice to LibreOffice. The talk draws on the basis of customer consulting projects on the topic  and include the relevant safety requirements in connection with LibreOffice on. They range from  specific functional requirements, to general requirements for the software in their creation and operation. This formulation is not only at the technical level, it affects and  challanges the entire eco-system. Furthermore, relevant responses from LibO be named to these safety  needs. As this topic seems to be a new more political argument for the rejection of migrations to  free office suites it is less technically argued but shown, why it works well for the evaluation, to  provide the right answers here.</p>
+<p><small>Thursday from: 15:00 ~ to: 15:30</small></p>
+
+
+<h2 id="libreoffice-migration-protocol">LibreOffice Migration Protocol [Migration]</h2>
+<p><i><a href="/2014/speaker#cor-nouws">Cor Nouws</a></i></p>
+<p>Presentation and Discussing the LibreOffice Migration Protocol: what can we add to make it more informative?</p>
+<p><small>Thursday from: 16:00 ~ to: 16:30</small></p>
+
+
+<h2 id="whats-cooking-in-gnome---312-under-the-hood">What's cooking in GNOME - 3.12 under the hood [Migration]</h2>
+<p><i><a href="/2014/speaker#tobias-mueller">Tobias Mueller</a> (Student)</i></p>
+<p>With the GNOME 3.14 release in October many visible improvements were delivered to users around the world.
+While many people already excitedly use GNOME 3 with the new user experience, some feature of the new and elegant desktop like distraction-free notifications or redesigned system settings are not yet wildly known. We also did many things on the plumbing layer such as allowing GNOME to run Wayland.
+
+The talk will introduce to some of the design philosophies inherent in GNOME 3 as well as the main changes brought to users and developers. Also, since GNOME 3.14 is another step of a long lasting incrementally improved user experience, the future of GNOME's development will be speculated on.</p>
+<p><small>Friday from: 09:30 ~ to: 10:00</small></p>
+
+
+<h2 id="profile-of-training-professionals">Profile of Training Professionals [Migration]</h2>
+<p><i><a href="/2014/speaker#italo-vignoli">Italo Vignoli</a></i></p>
+<p>LibreOffice Certification is different from any commercial one. Because of this, it is important for candidates for trainings to understand what TDF expects from them.</p>
+<p><small>Friday from: 10:00 ~ to: 10:30</small></p>
+
+
+<h2 id="what-is-a-smart-way-to-prepare-trainings-for-libreoffice-in-a-migration-situation-">What Is a Smart Way to Prepare Trainings for LibreOffice in a Migration Situation ? [Migration]</h2>
+<p><i><a href="/2014/speaker#cor-nouws">Cor Nouws</a></i></p>
+<p>What is a smart way to prepare trainings for LibreOffice in a migration Situation?</p>
+<p><small>Friday from: 11:00 ~ to: 11:30</small></p>
+
+
+<!-- ********** NEXT TOPIC ********** -->
+
+<h2 id="promoting-libreoffice-in-your-language">Promoting LibreOffice in Your Language [Marketing]</h2>
+<p><i><a href="/2014/speaker#charles-schulz">Charles Schulz</a></i></p>
+<p>All you wanted to know about promoting LibreOffice in your language but never dared or had the time to ask! Among other topics this talk will discuss the following topics:
+* messaging and adaptation to cultural and national contexts
+* collaboration and contribution within the LibreOffice project for marketing
+* sharing experiences - social media etc.</p>
+<p><small>Thursday from: 09:30 ~ to: 10:00</small></p>
+
+
+<h2 id="almost-hidden-features-in-libreoffice-43">Almost Hidden Features in LibreOffice 4.3 [Marketing]</h2>
+<p><i><a href="/2014/speaker#eike-rathke">Eike Rathke</a></i></p>
+<p>An overview of some features I implemented for LibreOffice 4.3 that may not be too obvious for the casual user.</p>
+<p><small>Thursday from: 10:00 ~ to: 10:30</small></p>
+
+
+<h2 id="marketing-strategy-workshop">Marketing Strategy Workshop [Marketing]</h2>
+<p><i><a href="/2014/speaker#charles-schulz">Charles Schulz</a>, <a href="/2014/speaker#italo-vignoli">Italo Vignoli</a></i></p>
+<p>This marketing strategy workshop will serve as an opportunity to reflect on the past year and the new activities we are considering.</p>
+<p><small>Thursday from: 16:30 ~ to: 17:30</small></p>
+
+
+<h2 id="dealing-with-journalists">Dealing with Journalists [Marketing]</h2>
+<p><i><a href="/2014/speaker#italo-vignoli">Italo Vignoli</a></i></p>
+<p>This is a crash media training for people who will not be able to attend the full session which will be organized just before the conference. It is supposed to provide the basics of media relations, to help native language projects in dealing with journalists.</p>
+<p><small>Friday from: 11:30 ~ to: 12:00</small></p>
+
+
+<h2 id="shouting-from-the-rooftops-how-can-we-be-more-effective-at-libreoffice-community-outreach">Shouting from the Rooftops: How can we be more effective at LibreOffice Community Outreach? [Marketing]</h2>
+<p><i><a href="/2014/speaker#robinson-tryon">Robinson Tryon</a> (QA Engineer, The Document Foundation)</i></p>
+<p>Over the last year we've made some amazing progress in building a vibrant LibreOffice community in the US. Recruiting new talent from our LibreOffice userbase and organizing events has taken a unique blend of time, skills, and good luck.
+
+In July we'll be holding our 'US Summer Hackfest' -- an event that will give new contributors a chance to learn from experienced developers, QA Team members, and marketing/outreach representatives. We're hopeing that everyone in attendance will both learn from and teach others.
+
+If you're interested in becoming more involved with LibreOffice Outreach, please attend this session to learn more about
+* Effective LibreOffice talking points
+* Getting a local LibreOffice Community established in your city, state, or country
+* New ideas for non-traditional outreach
+* ...and more!</p>
+<p><small>Friday from: 14:00 ~ to: 14:30</small></p>
+
+
+<!-- ********** NEXT TOPIC ********** -->
+
+<h2 id="state-of-the-project">State of the Project [Keynote]</h2>
+<p><i><a href="<a href="/2014/speaker#italo-vignoli">Italo Vignoli</a>, <a href="/2014/speaker#florian-effenberger">Florian Effenberger</a>">/2014/speaker#michael-meeks</a>, Michael Meeks</i></p>
+<p>The traditional first day speech about the state of the project, with a summary of the activities, the numbers about developers and possibly downloads, and an update about the development status and the growth of the infrastructure.</p>
+<p><small>Wednesday from: 11:30 ~ to: 12:00</small></p>
+
+
+<!-- ********** NEXT TOPIC ********** -->
+
+
+
+</body></html>
