@@ -23,11 +23,11 @@ YAHOO.Bubbling.fire("registerAction", {
                             var form = '<form id="loleafletform" name="loleafletform" target="loleafletframe" action="' + frameSrcURL + '" method="post">' +
                                 '<input name="access_token" value="' + encodeURIComponent(access_token) + '" type="hidden"/></form>';
 
-                            var frame = '<iframe id="loleafletframe" name= "loleafletframe" allowfullscreen style="width:100%;height:100%;position:absolute;"/>';
+                            var frame = '<iframe id="loleafletframe" name= "loleafletframe" allowfullscreen />';
 
                             $('#loolcontainer').remove();
 
-                            var container = '<div id="loolcontainer" style="position: fixed; height: 100%; width: 100%; top: 0; left: 0; background: white;"></div>';
+                            var container = '<div id="loolcontainer"></div>';
                             $('body').append(container);
                             var loolContainer = $('#loolcontainer');
 
