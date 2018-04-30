@@ -7,9 +7,8 @@
 #loolcontainer {
 	position: fixed;
 	bottom: 50px;
-	height: 100%;
 	width: 100%;
-	top: 0;
+	top: 96px;
 	left: 0;
 	background: white;
 }
