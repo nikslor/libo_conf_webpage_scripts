@@ -16,6 +16,8 @@
 
     <bean id="magenta.page.module.evaluator" class="dk.magenta.libreOffice.online.PageModuleEvaluator" />
 
+   <!-- Being edited with the libreoffice online -->
+   <bean id="evaluator.doclib.indicator.loolEditing" class="fr.arawa.collabora.evaluator.doclib.indicator.EditingEvaluator" />
     <!-- Add module specific messages and labels -->
     <bean id="libreoffice-online-share.resources"
           class="org.springframework.extensions.surf.util.ResourceBundleBootstrapComponent">
