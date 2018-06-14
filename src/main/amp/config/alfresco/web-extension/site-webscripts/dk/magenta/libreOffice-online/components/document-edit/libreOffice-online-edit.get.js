@@ -1,6 +1,8 @@
 <import resource="classpath:alfresco/site-webscripts/org/alfresco/callutils.js">
+<import resource="classpath:/alfresco/templates/org/alfresco/import/alfresco-util.js">
 
     function main() {
+
         var wopi_host_url = '';
         var nodeRef = url.args.nodeRef,
             connector = remote.connect("alfresco");
@@ -26,9 +28,11 @@
                 var wopi_src_url = post.wopi_src_url;
                 var fileId = nodeRef.substring(nodeRef.lastIndexOf('/') + 1);
                 var wopiFileURL = wopi_host_url + "/wopi/files/" + fileId;
+                var params = "WOPISrc=" + encodeURI(wopiFileURL);
+                params += "&closebutton=1";
 
                 model.wopiFileURL = wopiFileURL;
-                model.iFrameURL = wopi_src_url + "WOPISrc=" + encodeURI(wopiFileURL);
+                model.iFrameURL = wopi_src_url + params;
                 model.access_token = post.access_token;
                 model.access_token_ttl = post.access_token_ttl;
             }
@@ -54,7 +58,8 @@
                 lastName: model.lastName,
                 iFrameURL: model.iFrameURL,
                 userId: model.userId,
-                wopiFileURL: model.wopiFileURL
+                wopiFileURL: model.wopiFileURL,
+                nodeRef: nodeRef
             }
 
         };

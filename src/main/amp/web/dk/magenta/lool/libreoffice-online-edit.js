@@ -38,7 +38,8 @@ if (typeof Magenta == "undefined" || !Magenta) {
             lastName: '',
             iFrameURL: '',
             userId: '',
-            wopiFileURL: ''
+            wopiFileURL: '',
+            nodeRef: ''
         },
 
         /**
@@ -52,9 +53,10 @@ if (typeof Magenta == "undefined" || !Magenta) {
             require(["jquery"], (function ($) {
                 var form = '<form id="loleafletform" name="loleafletform" target="loleafletframe" action="' + me.options.iFrameURL + '" method="post">' +
                     '<input name="access_token" value="' + encodeURIComponent(me.options.access_token) + '" type="hidden"/>' +
-                    '<input name="access_token_ttl" value="' + encodeURIComponent(me.options.access_token_ttl) + '" type="hidden"/></form>';
+                    '<input name="access_token_ttl" value="' + encodeURIComponent(me.options.access_token_ttl) + '" type="hidden"/>' +
+                    '</form>';
 
-                var frame = '<iframe id="loleafletframe" name= "loleafletframe" allowfullscreen />';
+                var frame = '<iframe id="loleafletframe" name= "loleafletframe" allowfullscreen="true" />';
 
                 $('#loolcontainer').remove();
 
@@ -71,7 +73,47 @@ if (typeof Magenta == "undefined" || !Magenta) {
 
                 $('#loleafletform').submit();
             }));
+            
+            /**
+             * PostMessage Handler
+             */            
+            YAHOO.util.Event.addListener(window, "message", function handlePostMessage(e) {
+                var msg = JSON.parse(e.data);
+
+                var msgId = msg.MessageId;
+                var msgData = msg.Values;
+                
+                switch (msgId) {
+                case "close":
+                    // ignore - deprecated -
+                    break;
+                    
+                case "UI_Close":
+                    // Go back to directory (or details-view ?)
+                    console.log("PostMessage Recev: UI_Close - move to ");
+                    var $siteURL = Alfresco.util.siteURL;
+                    window.location.href = $siteURL("document-details") + "?nodeRef=" + me.options.nodeRef;
+                    
+                    break;
+                    
+                case "App_LoadingStatus":
+                    console.log("PostMessage Recev: App_LoadingStatus - Status:" + msgData.Status);
+                    break;
+
+                case "View_Added":
+                    console.log("PostMessage Recev: View_Added - Values:" + JSON.stringify(msgData));
+                    break;
+                    
+                default:
+                    console.log("PostMessage Recev: " + e.data);
+                    break;
+                }
+            });
 
         }
     });
 })();
+
+
+        
+
