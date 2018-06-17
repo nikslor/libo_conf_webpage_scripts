@@ -43,7 +43,14 @@
                         </actionGroup>
                     </actionGroups>
                 </config>
-
+                <config evaluator="string-compare" condition="DocumentLibrary">
+                    <indicators>
+                        <!-- Being edited by current user -->
+                        <indicator id="lool-editing" index="15" action="document-edit-libreoffice-online">
+                            <evaluator>evaluator.doclib.indicator.loolEditing</evaluator>
+                        </indicator>
+                    </indicators>
+                </config>
             </configurations>
         </module>
 

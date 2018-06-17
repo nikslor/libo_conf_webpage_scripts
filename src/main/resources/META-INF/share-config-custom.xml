@@ -2,12 +2,6 @@
 
     <config evaluator="string-compare" condition="DocumentLibrary">
 
-        <indicators>
-            <!-- Being edited by current user -->
-            <indicator id="lool-editing" index="15">
-                <evaluator>evaluator.doclib.indicator.loolEditing</evaluator>
-            </indicator>
-        </indicators>
 
 
         <metadata-templates>
