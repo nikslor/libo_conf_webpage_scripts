@@ -7,8 +7,9 @@
 						renderer : function loolEditing_renderer(record, label) {
 							var jsNode = record.jsNode, properties = jsNode.properties, html = "";
 							var editors = properties["lool:editors"] || "";
-							return '<span>' + label + '<h2>' + editors
-									+ '</h2></span>';
+							var txt = this.msg("details.banner.lool-editing");
+							return '<span>' + label + '</span><span>' + txt
+									+ ' ' + editors + '</span>';
 						}
 					});
 })();
