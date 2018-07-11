@@ -7,6 +7,16 @@
             <auto-deploy-index>1</auto-deploy-index>
 
             <components>
+                <component>
+                    <region-id>node-header</region-id>
+                    <source-id>document-details</source-id>
+                    <scope>template</scope>
+                    <sub-components>
+                        <sub-component id="lool_node_header" index="25">
+                            <url>/lool/node-header</url>
+                        </sub-component>
+                    </sub-components>
+                </component>
             </components>
 
             <customizations>

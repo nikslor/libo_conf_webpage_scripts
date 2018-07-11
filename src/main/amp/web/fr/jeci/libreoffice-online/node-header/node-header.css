@@ -1,0 +1,18 @@
+/* DIV */
+.lool-node-header {
+    padding: 0.5em 1em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    background-color: #eee;
+    border: 1px solid #ccc;
+}
+
+/* SPAN */
+.lool-editing {
+/*    background-image: url(../../../../components/documentlibrary/indicators/editing-16.png); */
+    background-image: url(/share/res/components/documentlibrary/actions/document-edit-libreoffice-online-16.png);
+    background-repeat: no-repeat;
+    line-height: 1.5em;
+    padding: 1px 0 1px 20px;
+    font-size: 11px;
+}
