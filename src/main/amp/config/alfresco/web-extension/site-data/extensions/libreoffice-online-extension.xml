@@ -43,7 +43,7 @@
                             <evaluator>evaluator.doclib.action.editableByCurrentUser</evaluator>
                             <evaluator negate="true">evaluator.doclib.action.isLocked</evaluator>
                         </action>
-                        
+
                          <!-- Upload new version -->
                          <action id="document-upload-new-version" type="javascript" label="actions.document.upload-new-version">
                             <param name="function">onActionUploadNewVersion</param>
@@ -55,7 +55,7 @@
                             <evaluator negate="true">evaluator.doclib.metadata.isLocked</evaluator>
                             <evaluator negate="true">evaluator.doclib.indicator.loolEditing</evaluator>
                          </action>
-                    
+
                          <!-- Inline edit -->
                          <action id="document-inline-edit" type="pagelink" label="actions.document.inline-edit">
                             <param name="page">inline-edit?nodeRef={node.nodeRef}</param>
@@ -95,7 +95,7 @@
                             <evaluator>evaluator.doclib.action.isMimetypeEditableAos</evaluator>
                             <evaluator negate="true">evaluator.doclib.indicator.loolEditing</evaluator>
                          </action>
-                         
+
                          <!-- Edit offline -->
                          <action id="document-edit-offline" type="javascript" label="actions.document.edit-offline">
                             <param name="function">onActionEditOffline</param>
@@ -107,7 +107,17 @@
                             <evaluator negate="true">evaluator.doclib.action.notEditable</evaluator>
                             <evaluator negate="true">evaluator.doclib.indicator.loolEditing</evaluator>
                          </action>
-                         
+
+                         <!-- Move to -->
+                         <action id="document-move-to" type="javascript" label="actions.document.move-to">
+                            <param name="function">onActionMoveTo</param>
+                            <permissions>
+                               <permission allow="true">Delete</permission>
+                            </permissions>
+                            <evaluator>evaluator.doclib.action.editableByCurrentUser</evaluator>
+                            <evaluator negate="true">evaluator.doclib.indicator.loolEditing</evaluator>
+                         </action>
+
                          <!-- Delete -->
                          <action id="document-delete" type="javascript" label="actions.document.delete">
                             <param name="function">onActionDelete</param>
@@ -119,7 +129,30 @@
                             <evaluator>evaluator.doclib.action.isDeletable</evaluator>
                             <evaluator negate="true">evaluator.doclib.indicator.loolEditing</evaluator>
                          </action>
-                         
+
+                         <!-- Manage permissions (granular permissions) -->
+                         <action id="document-manage-granular-permissions" type="link" icon="document-manage-permissions" label="actions.document.manage-permissions">
+                             <param name="href">{managePermissionsUrl}</param>
+                            <permissions>
+                               <permission allow="true">ChangePermissions</permission>
+                            </permissions>
+                            <evaluator>evaluator.doclib.action.siteBased</evaluator>
+                            <evaluator negate="true">evaluator.doclib.action.isWorkingCopy</evaluator>
+                            <evaluator negate="true">evaluator.doclib.indicator.loolEditing</evaluator>
+                         </action>
+
+                         <!-- Manage permissions (repository roles) -->
+                         <action id="document-manage-repo-permissions" type="link" icon="document-manage-permissions" label="actions.document.manage-permissions">
+                            <param name="href">{managePermissionsUrl}</param>
+                            <permissions>
+                               <permission allow="true">ChangePermissions</permission>
+                            </permissions>
+                            <evaluator negate="true">evaluator.doclib.action.siteBased</evaluator>
+                            <evaluator negate="true">evaluator.doclib.action.isWorkingCopy</evaluator>
+                            <evaluator negate="true">evaluator.doclib.indicator.loolEditing</evaluator>
+                         </action>
+
+
                     </actions>
                     <actionGroups>
                         <actionGroup id="document-browse">
@@ -172,4 +205,3 @@
 
     </modules>
 </extension>
-
